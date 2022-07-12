@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tlePantallaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="@font/outfitfont"
+        android:text="Mis Recetas"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="600dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="174dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCenas" />
+
+    <Button
+        android:id="@+id/btnInicio2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF1744"
+        android:fontFamily="@font/outfitfont"
+        android:text="Inicio"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFavoritas2"
+        app:layout_constraintTop_toBottomOf="@+id/div2"
+        app:strokeColor="#FF1744" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF1744"
+        android:fontFamily="@font/outfitfont"
+        android:text="Perfil"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/div1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FF1744" />
+
+    <Button
+        android:id="@+id/btnFavoritas2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF1744"
+        android:fontFamily="@font/outfitfont"
+        android:text="Favoritas"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInicio2"
+        app:layout_constraintTop_toBottomOf="@+id/div2"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#FF1744" />
+
+    <Button
+        android:id="@+id/btnMisRecetas2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF1744"
+        android:fontFamily="@font/outfitfont"
+        android:text="Mis Recetas"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFavoritas2"
+        app:layout_constraintTop_toBottomOf="@+id/div2"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#FF1744" />
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="372dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/div1" />
+
+    <TextView
+        android:id="@+id/txtPostres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="291dp"
+        android:fontFamily="@font/outfitfont"
+        android:text="Postres"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/txtCenas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="309dp"
+        android:fontFamily="@font/outfitfont"
+        android:text="Cenas"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesayunos" />
+
+    <TextView
+        android:id="@+id/txtDesayunos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="257dp"
+        android:fontFamily="@font/outfitfont"
+        android:text="Desayunos"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPostres" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

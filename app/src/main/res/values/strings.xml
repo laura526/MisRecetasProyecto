@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MisRecetasProyecto</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="forgotPassword">¿Olvidó su contraseña?</string>
+    <string name="user">Usuario</string>
+</resources>
